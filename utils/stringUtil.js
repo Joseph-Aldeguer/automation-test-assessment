@@ -3,4 +3,4 @@ function addTimestamp(input) {
   return `${input}-${timestamp}`;
 }
 
-module.exports = { appendTimestamp };
+module.exports = { addTimestamp };
