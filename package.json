@@ -1,0 +1,19 @@
+{
+  "name": "tech-assessment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chai": "^5.2.0",
+    "fs-extra": "^11.3.0",
+    "mocha": "^11.4.0",
+    "playwright": "^1.52.0",
+    "selenium-webdriver": "^4.32.0"
+  }
+}
