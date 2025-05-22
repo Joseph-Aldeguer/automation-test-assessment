@@ -3,17 +3,20 @@ const { By, until } = require('selenium-webdriver');
 class LoginPage {
   constructor(driver) {
     this.driver = driver;
+    this.usernameField = By.id('user-name');
+    this.passwordField = By.id('password');
+    this.loginButton   = By.id('login-button');
   }
 
-  async navigate() {
-    await this.driver.get('https://example.com/login');
+  async open() {
+    await this.driver.get('https://www.saucedemo.com/');
   }
 
   async login(username, password) {
-    await this.driver.wait(until.elementLocated(By.id('username')), 5000);
-    await this.driver.findElement(By.id('username')).sendKeys(username);
-    await this.driver.findElement(By.id('password')).sendKeys(password);
-    await this.driver.findElement(By.id('loginButton')).click();
+    await this.driver.wait(until.elementLocated(this.usernameField), 5000);
+    await this.driver.findElement(this.usernameField).sendKeys(username);
+    await this.driver.findElement(this.passwordField).sendKeys(password);
+    await this.driver.findElement(this.loginButton).click();
   }
 }
 
