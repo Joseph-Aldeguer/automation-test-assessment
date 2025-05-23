@@ -9,18 +9,18 @@ and cart verification.
 ##Project Structure
 
 automation-test-assessment/
-├── tests/
-│   ├── login.test.js
-│   ├── product.test.js
-│   └── playwright.test.js
-├── pages/
-│   └── ProductPage.js
-├── utils/
-│   └── stringUtils.js
-├── screenshots/
-│   └── [timestamped screenshots]
-├── package.json
-└── README.md
+--- tests/
+----- login.test.js
+----- product.test.js
+----- playwright.test.js
+--- pages/
+----- ProductPage.js
+--- utils/
+----- stringUtils.js
+--- screenshots/
+----- [timestamped screenshots]
+--- package.json
+--- README.md
 
 - tests/: Contains test scripts for different functionalities.
 
